@@ -7,26 +7,26 @@ namespace lab2_2
         static void Main(string[] args)
         {
             DateTime now = DateTime.Now;
-            string date = now.ToString("d");
-            string time = now.ToString("T");
+            string date1 = now.ToString("G");
+            string date2 = now.ToString("F");
             int[] numbers = new int[10];
 
-            Console.WriteLine("Текущее время: " + time);
-            Console.WriteLine("Текущая дата: " + date);
+            Console.WriteLine("Формат даты №1: " + date1);
+            Console.WriteLine("Формат даты №2: " + date2);
 
-            for (int i = 0; i < date.Length; i++)
+            for (int i = 0; i < date1.Length; i++)
             {
-                if (date[i] < 58 && date[i] > 47)
+                if (date1[i] < 58 && date1[i] > 47)
                 {
-                    numbers[date[i] - 48]++;
+                    numbers[date1[i] - 48]++;
                 }
             }
 
-            for (int i = 0; i < time.Length; i++)
+            for (int i = 0; i < date2.Length; i++)
             {
-                if (time[i] < 58 && time[i] > 47)
+                if (date2[i] < 58 && date2[i] > 47)
                 {
-                    numbers[time[i] - 48]++;
+                    numbers[date2[i] - 48]++;
                 }
             }
 
