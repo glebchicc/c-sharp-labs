@@ -15,11 +15,25 @@ namespace ConsoleApplication1
             while (cont)
             {
                 Console.Clear();
-                Console.WriteLine("Выберите аудиофайл для проигрывания: \n0. Стандартный аудиофайл. \n1. Свой аудиофайл.");
-                string pick = Console.ReadLine();
-                if (pick == "1")
+                Console.WriteLine("Выберите аудиофайл для проигрывания: \n0. Тестовый аудиофайл. \n1. Свой аудиофайл.");
+                string choice = Console.ReadLine();
+                if (choice == "0")
                 {
-                    Console.Write("Введите пусть до .wav файла: ");
+
+                    Console.WriteLine($"\nThe Weekend - Blinding Lights\n");
+
+                    PlaySound("default.wav", IntPtr.Zero, 0x0001);
+
+                    Console.WriteLine($"Нажмите S, чтобы пропустить аудиофайл: ");
+                    while (Console.ReadKey().Key != ConsoleKey.S)
+                    {
+                        Console.ReadKey();
+                    }
+                    PlaySound(" ", IntPtr.Zero, 0x0001);
+                }
+                else if (choice == "1")
+                {
+                    Console.Write("Введите путь до .wav файла: ");
                     string filename = Console.ReadLine();
 
                     FileInfo fileInf = new FileInfo(filename);
@@ -44,23 +58,52 @@ namespace ConsoleApplication1
                     }
 
                     PlaySound(" ", IntPtr.Zero, 0x0001);
-
-                }
-                else if (pick == "0")
-                {
-
-                    Console.WriteLine($"\nThe Weekend - Blinding Lights\n");
-
-                    PlaySound("default.wav", IntPtr.Zero, 0x0001);
-
-                    Console.WriteLine($"Нажмите S, чтобы пропустить аудиофайл: ");
-                    while (Console.ReadKey().Key != ConsoleKey.S)
-                    {
-                        Console.ReadKey();
-                    }
-                    PlaySound(" ", IntPtr.Zero, 0x0001);
                 }
             }
         }
     }
+}
+
+
+
+if (choice == "0")
+{
+
+    Console.WriteLine($"\nThe Weekend - Blinding Lights\n");
+
+    PlaySound("default.wav", IntPtr.Zero, 0x0001);
+
+    Console.WriteLine($"Нажмите S, чтобы пропустить аудиофайл: ");
+    while (Console.ReadKey().Key != ConsoleKey.S)
+    {
+        Console.ReadKey();
+    }
+    PlaySound(" ", IntPtr.Zero, 0x0001);
+} else if (choice == "1")
+{
+    Console.Write("Введите пусть до .wav файла: ");
+    string filename = Console.ReadLine();
+
+    FileInfo fileInf = new FileInfo(filename);
+
+    while (!fileInf.Exists)
+    {
+        Console.Write("Не удалось загрузить файл, повторите попытку: ");
+        fileInf = new FileInfo(Console.ReadLine());
+    }
+
+    filename = fileInf.FullName;
+
+    Console.WriteLine($"\nСейчас играет: {fileInf.Name}\n");
+
+    PlaySound(filename, IntPtr.Zero, 0x0001);
+
+    Console.WriteLine($"Нажмите S, чтобы пропустить аудиофайл: ");
+
+    while (Console.ReadKey().Key != ConsoleKey.S)
+    {
+        Console.ReadKey();
+    }
+
+    PlaySound(" ", IntPtr.Zero, 0x0001);
 }
