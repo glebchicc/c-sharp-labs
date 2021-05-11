@@ -1,22 +1,10 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using static dllcsharp.Class1;
 
 namespace lab4_2
 {
     static class Program
     {
-        [DllImport("Dll.dll", CallingConvention = CallingConvention.Cdecl)]
-        static extern int Add(int a, int b);
-
-        [DllImport("Dll.dll", CallingConvention = CallingConvention.Cdecl)]
-        static extern int Subtract(int a, int b);
-
-        [DllImport("Dll.dll", CallingConvention = CallingConvention.Cdecl)]
-        static extern int Multiply(int a, int b);
-
-        [DllImport("Dll.dll", CallingConvention = CallingConvention.Cdecl)]
-        static extern int Division(int a, int b);
-
         static int CheckInt()
         {
             int a;

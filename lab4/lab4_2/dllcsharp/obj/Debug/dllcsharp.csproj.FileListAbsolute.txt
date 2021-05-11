@@ -1,0 +1,6 @@
+D:\projects\c#\lab4\lab4_2\dllcsharp\bin\Debug\dllcsharp.dll
+D:\projects\c#\lab4\lab4_2\dllcsharp\bin\Debug\dllcsharp.pdb
+D:\projects\c#\lab4\lab4_2\dllcsharp\obj\Debug\dllcsharp.csprojAssemblyReference.cache
+D:\projects\c#\lab4\lab4_2\dllcsharp\obj\Debug\dllcsharp.csproj.CoreCompileInputs.cache
+D:\projects\c#\lab4\lab4_2\dllcsharp\obj\Debug\dllcsharp.dll
+D:\projects\c#\lab4\lab4_2\dllcsharp\obj\Debug\dllcsharp.pdb

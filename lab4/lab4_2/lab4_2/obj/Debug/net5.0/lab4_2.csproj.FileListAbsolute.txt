@@ -14,3 +14,6 @@ D:\projects\c#\lab4\lab4_2\lab4_2\obj\Debug\net5.0\lab4_2.dll
 D:\projects\c#\lab4\lab4_2\lab4_2\obj\Debug\net5.0\ref\lab4_2.dll
 D:\projects\c#\lab4\lab4_2\lab4_2\obj\Debug\net5.0\lab4_2.pdb
 D:\projects\c#\lab4\lab4_2\lab4_2\obj\Debug\net5.0\lab4_2.genruntimeconfig.cache
+D:\projects\c#\lab4\lab4_2\lab4_2\bin\Debug\net5.0\dllcsharp.dll
+D:\projects\c#\lab4\lab4_2\lab4_2\bin\Debug\net5.0\dllcsharp.pdb
+D:\projects\c#\lab4\lab4_2\lab4_2\obj\Debug\net5.0\lab4_2.csproj.CopyComplete

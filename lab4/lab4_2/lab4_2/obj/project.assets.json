@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "dllcsharp/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/dllcsharp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dllcsharp.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "dllcsharp/1.0.0": {
+      "type": "project",
+      "path": "../dllcsharp/dllcsharp.csproj",
+      "msbuildProject": "../dllcsharp/dllcsharp.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "dllcsharp >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Глеб Буткевич\\.nuget\\packages\\": {},
@@ -40,7 +58,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj": {
+              "projectPath": "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,6 +4,16 @@
     "D:\\projects\\c#\\lab4\\lab4_2\\lab4_2\\lab4_2.csproj": {}
   },
   "projects": {
+    "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj",
+        "projectName": "dllcsharp",
+        "projectPath": "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "D:\\projects\\c#\\lab4\\lab4_2\\lab4_2\\lab4_2.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +42,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj": {
+                "projectPath": "D:\\projects\\c#\\lab4\\lab4_2\\dllcsharp\\dllcsharp.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
